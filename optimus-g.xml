@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="github"
+fetch="git://github.com/" />
+
+  <project groups="device,e975" name="CyanogenMod/android_device_lge_e975" path="device/lge/e975" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_device_lge_gproj-common" path="device/lge/gproj-common" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/android_hardware_qcom_fm" path="hardware/qcom/fm" remote="github" revision="cm-11.0" />
+  <project name="CyanogenMod/lge-kernel-gproj" path="kernel/lge/gproj" remote="github" revision="cm-11.0"/>
+
+</manifest>
