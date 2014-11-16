@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote name="github"
-fetch="git://github.com/" />
+  <remote name="github" fetch="git://github.com/" />
+  <include name="base-kk-aosp.xml"/>
+  <default remote="caf" revision="refs/tags/android-4.4.2_r1" sync-j="4"/>
 
   <project groups="device,e975" name="CyanogenMod/android_device_lge_e975" path="device/lge/e975" remote="github" revision="cm-11.0" />
+  <project name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon"/>
   <project name="CyanogenMod/android_device_lge_gproj-common" path="device/lge/gproj-common" remote="github" revision="cm-11.0" />
   <project name="CyanogenMod/android_hardware_qcom_fm" path="hardware/qcom/fm" remote="github" revision="cm-11.0" />
   <project name="CyanogenMod/lge-kernel-gproj" path="kernel/lge/gproj" remote="github" revision="cm-11.0"/>
 
+  <project name="platform/external/libnfc-nci" path="external/libnfc-nci"/>
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8"/>
+  <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan"/>
+  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio"/>
+  <project name="platform/hardware/qcom/bt" path="hardware/qcom/bt"/>
+  <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display"/>
+  <project name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster"/>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
+  <project name="platform/hardware/qcom/msm8960" path="hardware/qcom/msm8960"/>
+  <project name="platform/hardware/qcom/power" path="hardware/qcom/power"/>
+  <project name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan"/>
+  <project name="platform/hardware/ril" path="hardware/ril"/>
+  <project name="platform_system_nfcd" path="system/nfcd" remote="b2g" revision="master"/>
 </manifest>
+
